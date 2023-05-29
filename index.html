@@ -76,7 +76,7 @@
         </div>
     </div>
     <div class="dato">
-        <h2>Datos <br> Personales</h2>
+        <h2>Personal <br>Information</h2>
         <hr class="line">
         </hr>
     </div>
@@ -84,30 +84,166 @@
     <div class="container">
         <div class="column">
             <div class="box">
-                <h2>Educación</h2>
+                <h2>Education</h2>
                 <p>Instituto Universitario Politécnico "Santiago Mariño" <br>
                     Ingeniero de Sistemas </p>
             </div>
             <div class="box">
                 <h2>EMAIL</h2>
                 <p>Andreaelbittarl@gmail.com</p>
-                <h2>DIRECCIÓN</h2>
+                <h2>Address</h2>
                 <p>Bogotá,Colombia</p>
             </div>
         </div>
         <div class="column">
             <div class="box center-box">
-                <h2>experiencia</h2>
+                <h2>EXPERIENCE</h2>
                 <p>Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
                     (N. del T.</p>
-                <p class="prof"> Conoce mi perfil profesional</p>
+                <p class="prof">Know my professional profile</p>
                 <a href="../static/img/Andrea-Elbittar-CV.pdf" class="buttoncv" target="_blank">
-                    Descargar CV
+                    Download CV
                 </a>
             </div>
         </div>
     </div>
 </section>
+<!----------------------------------------------  SKILLS ---------------------------------------------->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2 class="titleseccion1">SKILLS</h2>
+        <h2 class="titleseccion2">SKILLS</h2>
+        <div class="fila">
+            <!----------------------- Technical Skill ----------------------->
+            <div class="titleskills">SKILLS</div>
+            <div class="col">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Photoshop</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>81%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!----------------------- Professional Skills ----------------------->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <div class="fila2">
+            <div class="titleskills2">SKILLS</div>
+            <div class="col2">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Photoshop</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>81%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!----------------------------------------------  SECCION PORTFOLIO ---------------------------------------------->
+<section id="portfolio" class="portfolio">
+    <h2>PORTFOLIO</h2>
+
+    <div class="galeria">
+        {% for projects in projects %}
+
+        <div class="proyecto">
+            <a href="{{projects.url}}" target="_blank">
+                <img src="{{projects.image.url}}" alt="{{projects.title}}">
+                <div class="overlayportfolio">
+                    <h3>{{projects.title}}</h3>
+                    <p>{{projects.description}}</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<!---------------------------------------------- CONTACTO ---------------------------------------------->
+<section id="contacto" class="contacto">
+    <div class="contenido-contacto">
+        <h2>CONTACTO</h2>
+        <hr class="line-contact">
+        </hr>
+        <h1>CONTACTO</h1>
+        <div class="fila">
+            <!----------------------- Formulario ----------------------->
+            <div class="col-form">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Dirección de correo">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <a href="https://wa.link/pk3zdd" class="buttoncv" target="_blank">
+                    Enviar
+                </a>
+            </div>
+            
+</section>
+<!----------------------- footer ----------------------->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/andrea-elbittar-604204248/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:andreaelbittarl@gmail.com?subject=Estoy%20insteresadx%20en%20tus%20servicios"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Andreaelbittar"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
+
+
 
   </body>
 </html>
