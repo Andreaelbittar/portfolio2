@@ -198,27 +198,19 @@
     <h2>PORTFOLIO</h2>
 
     <div class="galeria">
-        {% for projects in projects %}
-
-        <div class="proyecto">
-            <a href="{{projects.url}}" target="_blank">
-                <img src="{{projects.image.url}}" alt="{{projects.title}}">
-                <div class="overlayportfolio">
-                    <h3>{{projects.title}}</h3>
-                    <p>{{projects.description}}</p>
-                </div>
-            </a>
-        </div>
-        {% endfor %}
+        <a class="container__a" href="https://github.com/Andreaelbittar/GamePython"><img src="/img/jueego.png" alt="minigame" class="delta"> MiniGame DODGEMASTER</a>
+        <a class="container__a" href="https://github.com/programateacademy/CDJ"><img src="/img/Consejo Distrital de la Juventud.jpg" alt="CDJ" class="delta"> Consejo Distrital de la Juventud</a>
+        <a class="container__a" href="https://github.com/Andreaelbittar/pokemon"><img src="/img/pro2.png" alt="Pokedex" class="delta"> Pokedex</a>
+        
     </div>
 </section>
 <!---------------------------------------------- CONTACTO ---------------------------------------------->
 <section id="contacto" class="contacto">
     <div class="contenido-contacto">
-        <h2>CONTACTO</h2>
+        <h2>CONTACT</h2>
         <hr class="line-contact">
-        </hr>
-        <h1>CONTACTO</h1>
+        <hr />
+        <h1>CONTACT</h1>
         <div class="fila">
             <!----------------------- Formulario ----------------------->
             <div class="col-form">
@@ -226,7 +218,7 @@
                 <input type="text" placeholder="Dirección de correo">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 <a href="https://wa.link/pk3zdd" class="buttoncv" target="_blank">
-                    Enviar
+                    Submit
                 </a>
             </div>
             
