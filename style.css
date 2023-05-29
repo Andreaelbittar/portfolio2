@@ -18,6 +18,7 @@ html {
 
 body {
   background: FAFBFC;
+  overflow-x: hidden;
 }
 
 .nav ul {
@@ -166,7 +167,7 @@ body {
 }
 
 .inicio .banner {
-  padding: 20px;
+  padding: 50px;
   background-color: #d9d9d9;
   max-width: 350px;
   margin: auto;
@@ -182,10 +183,28 @@ body {
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 42px;
   font-size: 72px;
   font-family: "Dorsa", sans-serif;
   color: black;
+  position: relative;
+  letter-spacing: 5.4px;
+}
+.title span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #d9d9d9;
+    border-left: 1px solid #000;
+    animation: maquina 3s infinite alternate steps(12);
+}
+@keyframes maquina{
+    from {
+        width: 82%;
+    }
+    to {
+        width: 0;
+    }
 }
 
 .description {
@@ -746,7 +765,7 @@ footer .arriba {
   background-color: black;
   color: #fff;
   position: absolute;
-  left: 50%;
+  left: 95%;
   transform: translateX(-50%);
   top: -25px;
   border-radius: 50%;
@@ -887,6 +906,7 @@ footer .arriba:hover {
   object-fit: cover;
   max-width: max-content;
   margin-bottom: 10px;
+  margin: 0 auto;
 }
 
 .container__a {
